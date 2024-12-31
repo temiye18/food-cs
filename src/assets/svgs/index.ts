@@ -1,5 +1,3 @@
-export { default as PlayIcon } from "./PlayIcon.svg";
-export { default as TiktokLogo } from "./TiktokLogo.svg";
 export { default as FoodCategory } from "./FoodCategory.svg";
 export { default as FoodCategoryMobile } from "./FoodCategoryMobile.svg";
 export { default as Industry } from "./Industry.svg";

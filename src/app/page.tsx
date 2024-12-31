@@ -2,7 +2,6 @@
 import { useState } from "react";
 import {
   Hero,
-  WhyItMatters,
   Innovation,
   WorldConnect,
   Empowering,
@@ -35,7 +34,6 @@ export default function Home() {
   return (
     <>
       <Hero handleOpenModal={handleOpenModal} />
-      <WhyItMatters />
       <Innovation />
       <WorldConnect handleOpenModal={handleOpenModal} />
       <Empowering />

@@ -5,53 +5,60 @@ export const faqs: Faq[] = [
     id: "q1",
     question: "What is FoodCS?",
     answer:
-      "FoodCS is a platform where food product development experts and businesses collaborate to create groundbreaking solutions. It bridges the gap between creativity and industry needs, driving innovation while fostering meaningful professional connections.",
+      "FoodCS is a web platform that matches food businesses with food experts. With the help of AI, we provide experts at any stage of your product development journey. From Ideation workshops through to launching your product",
   },
   {
     id: "q2",
     question: "How does the waitlist work?",
     answer:
-      "Joining the FoodCS waitlist gives you early access to connect with industry experts and participate in collaborative food product development projects. You'll receive updates about the platform's launch and exclusive opportunities.",
+      "Joining the waitlist secures your early access to FoodCS when it launches. We’ll notify you via email with updates and launch details.",
   },
   {
     id: "q3",
     question: "When will FoodCS launch?",
     answer:
-      "FoodCS is set to launch soon, with exact dates to be announced. Joining the waitlist ensures you're among the first to know and get involved.",
+      "We’re working hard to perfect the platform and aim to launch in March, 2025. Stay tuned for updates!",
   },
   {
     id: "q4",
     question: "Who can join the waitlist?",
     answer:
-      "Both individuals and businesses with an interest in food product development and innovation are welcome to join the FoodCS waitlist.",
+      "Anyone interested in food product development, whether you're an expert looking for projects or a business needing assistance.",
   },
   {
     id: "q5",
     question: "Is it free to join the waitlist?",
-    answer: "Yes, joining the FoodCS waitlist is completely free.",
+    answer: "Yes, joining the waitlist is completely free and non-binding.",
   },
   {
     id: "q6",
     question: "What benefits do waitlist members get?",
     answer:
-      "Waitlist members gain early access to the platform, updates on its development, and opportunities to engage with a community of food product development experts and businesses.",
+      "Early access to the platform, exclusive updates, and potentially special perks when FoodCS launches.",
   },
   {
     id: "q7",
-    question: "What kind of projects can I expect on FoodCS?",
+    question: "What type of expertise will be available on FoodCS?",
     answer:
-      "On FoodCS, you can expect projects focused on innovative food product development, addressing industry challenges, and creating market-ready solutions.",
+      "Wherever you are in your food development journey, there is an expert waiting to give you a helping hand on the FoodCS platform. From ideation workshops to recipe formulation to critical paths development we have the experts to help.",
   },
   {
     id: "q8",
-    question: "Can businesses and individuals join the waitlist?",
-    answer:
-      "Yes, both businesses and individuals passionate about food innovation can join the FoodCS waitlist to explore collaboration opportunities.",
+    question: "How is FoodCS helpful to me?",
+    answer: `Food Businesses: FoodCS provides the space for food startups, challenger brands or established brands to easily find and collaborate with experts in the food development field.  
+Food Experts: FoodCS is the platform created for food experts to easily connect with a variety of food businesses on a project to project basis.
+`,
   },
   {
     id: "q9",
+    question: "How will I know when the platform goes live?",
+    answer:
+      "We will send you an email notification with all the details when the platform is ready to use.",
+  },
+  {
+    id: "q10",
     question: "Can I share the waitlist with others?",
     answer:
-      "Absolutely! Sharing the FoodCS waitlist with others helps grow the community and brings in more opportunities for collaboration.",
+      "Absolutely! We encourage you to share the waitlist with friends, colleagues, or anyone ito begin their food development journey!",
   },
 ];

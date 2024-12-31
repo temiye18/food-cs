@@ -1,5 +1,4 @@
 export { default as Hero } from "./Hero/Hero";
-export { default as WhyItMatters } from "./WhyItMatters/WhyItMatters";
 export { default as Innovation } from "./Innovation/Innovation";
 export { default as WorldConnect } from "./WorldConnect/WorldConnect";
 export { default as Empowering } from "./Empowering/Empowering";
