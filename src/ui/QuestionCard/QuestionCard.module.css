@@ -1,0 +1,45 @@
+.card {
+  background-color: var(--green-60);
+  padding: 1rem clamp(0.75rem, 0.4722rem + 0.8889vw, 1.25rem);
+  border-radius: 8px;
+}
+
+.card .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .question button {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.card .question p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+
+.card .answer {
+  height: 0;
+  overflow: hidden;
+  transition: height ease-in-out 0.2s;
+}
+
+.card .answer p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: var(--green-100);
+  margin-top: 0.5rem;
+}
+
+.cared .answer.active {
+  height: auto;
+}

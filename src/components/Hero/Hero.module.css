@@ -1,0 +1,113 @@
+.hero-section {
+  background-image: url("/images/hero_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 810px;
+}
+
+.hero-section .hero-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.25rem;
+}
+
+.hero-section .hero-header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.hero-section .hero-header nav ul a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.hero-section .hero-header h1 {
+  font-family: "Gluten", serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 133%;
+  color: var(--white);
+}
+.hero-section .hero-header h1 > span {
+  color: var(--primary-color);
+}
+
+.hero-section .hero-content {
+  width: 100%;
+  max-width: 528px;
+  padding: clamp(1.75rem, -1.1319rem + 9.2222vw, 6.9375rem) 0
+    clamp(0rem, -6.0764rem + 19.4444vw, 10.9375rem) 0;
+}
+
+.hero-section .hero-content p.hero-tag {
+  font-size: 0.875rem;
+  line-height: 171%;
+  letter-spacing: -0.01em;
+  color: var(--white);
+  padding: 0.25rem 0.75rem;
+  background: rgba(42, 36, 33, 0.4);
+  backdrop-filter: blur(200px);
+  border: 1px solid var(--white);
+  border-radius: 320px;
+  width: max-content;
+}
+
+.hero-section .hero-content h1 {
+  width: 100%;
+  font-family: "Neue Montreal";
+  font-size: clamp(2.25rem, 1.5556rem + 2.2222vw, 3.5rem);
+  margin-top: 0.875rem;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.hero-section .hero-content h1 > span {
+  color: var(--primary-color-light);
+}
+
+.hero-section .hero-content p.hero-action {
+  font-size: clamp(1rem, 0.9306rem + 0.2222vw, 1.125rem);
+  color: var(--white);
+  margin: clamp(0.75rem, 0.5764rem + 0.5556vw, 1.0625rem) 0;
+  line-height: 178%;
+}
+
+.hero-section .hero-content img {
+  position: absolute;
+  right: -15%;
+  bottom: 50%;
+  transform: translate(-1%, -2%);
+}
+
+.hero-section .hero-content .hero-btn {
+  background-color: var(--white);
+}
+
+@media (max-width: 1228px) {
+  .hero-section .hero-content img {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    background-image: url("/images/hero_bg_mobile.png");
+    height: 90dvh;
+    min-height: 600px;
+    max-height: 810px;
+  }
+  .hero-section .hero-header nav {
+    display: none;
+  }
+
+  .hero-section .hero-header .header-btn {
+    background-color: var(--primary-color-dark);
+  }
+}

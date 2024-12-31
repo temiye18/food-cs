@@ -1,0 +1,117 @@
+.world-connect-section {
+  padding: clamp(2.5rem, 0.4167rem + 6.6667vw, 6.25rem) 0;
+}
+
+.world-connect__header {
+  width: 100%;
+  max-width: 672px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.world-connect__header h2 {
+  text-transform: uppercase;
+  font-family: "Neue Montreal";
+  font-size: clamp(1.75rem, 1.0556rem + 2.2222vw, 3rem);
+  color: var(--black);
+}
+
+.world-connect__header p {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  font-size: clamp(1rem, 0.9306rem + 0.2222vw, 1.125rem);
+  color: var(--black-variant);
+  margin: 1.25rem 0;
+}
+
+.food-category {
+  width: 100%;
+  max-width: 747px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: clamp(3rem, 2.4444rem + 1.7778vw, 4rem);
+}
+
+.food-category img.mobile {
+  display: none;
+}
+
+.global-connection {
+  width: 100%;
+  max-width: 1104px;
+  margin: 0 auto;
+  background-color: var(--green-80);
+  padding: 0 clamp(0.875rem, -0.0278rem + 2.8889vw, 2.5rem);
+  border-radius: 16px;
+  height: 448px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.global-connection img.map-desktop {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.global-connection img.map-mobile {
+  display: none;
+  position: absolute;
+  bottom: 0;
+}
+
+.global-connection__text {
+  width: 100%;
+  max-width: 502px;
+  position: relative;
+  z-index: 1;
+}
+
+.global-connection__text h3 {
+  font-family: "Neue Montreal";
+  font-size: clamp(1.5rem, 0.9444rem + 1.7778vw, 2.5rem);
+  line-height: 130%;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.global-connection__text p {
+  font-size: clamp(0.875rem, 0.8056rem + 0.2222vw, 1rem);
+  line-height: 171%;
+  letter-spacing: -0.01em;
+  color: #eff0ef;
+  margin: 1rem 0 1.25rem;
+}
+
+.global-connection .join-btn {
+  background-color: var(--white);
+}
+
+@media (max-width: 500px) {
+  .food-category img.desktop {
+    display: none;
+  }
+
+  .food-category img.mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .global-connection {
+    padding-top: 1.5rem;
+    height: 80dvh;
+    min-height: 400px;
+    max-height: 532.27px;
+    align-items: unset;
+  }
+  .global-connection img.map-desktop {
+    display: none;
+  }
+  .global-connection img.map-mobile {
+    display: block;
+  }
+}

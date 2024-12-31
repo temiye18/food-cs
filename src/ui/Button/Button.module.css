@@ -1,0 +1,13 @@
+.btn {
+  background: #bfff73;
+  border-radius: 320px;
+  border: none;
+  outline: none;
+  padding: 1rem clamp(1.25rem, 1.1111rem + 0.4444vw, 1.5rem);
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 100%;
+  color: var(--btn-text);
+  cursor: pointer;
+}

@@ -1,0 +1,16 @@
+export { default as PlayIcon } from "./PlayIcon.svg";
+export { default as TiktokLogo } from "./TiktokLogo.svg";
+export { default as FoodCategory } from "./FoodCategory.svg";
+export { default as FoodCategoryMobile } from "./FoodCategoryMobile.svg";
+export { default as Industry } from "./Industry.svg";
+export { default as Time } from "./Time.svg";
+export { default as StepOne } from "./StepOne.svg";
+export { default as StepTwo } from "./StepTwo.svg";
+export { default as StepThree } from "./StepThree.svg";
+export { default as CurveOne } from "./CurveOne.svg";
+export { default as CurveTwo } from "./CurveTwo.svg";
+export { default as Focus } from "./Focus.svg";
+export { default as Google } from "./Google.svg";
+export { default as Twitter } from "./Twitter.svg";
+export { default as Instagram } from "./Instagram.svg";
+export { default as LinkedIn } from "./LinkedIn.svg";

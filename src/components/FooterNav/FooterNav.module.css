@@ -1,0 +1,26 @@
+.footer-nav {
+  padding: clamp(2.5rem, 0.4167rem + 6.6667vw, 6.25rem) 0;
+}
+
+.footer-nav .footer-header {
+  display: flex;
+  align-items: center;
+}
+
+.footer-nav .footer-header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-nav .footer-header h1 {
+  font-family: "Gluten", serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 133%;
+  color: var(--black);
+  margin-right: auto;
+}
+.footer-nav .footer-header h1 > span {
+  color: var(--primary-color);
+}

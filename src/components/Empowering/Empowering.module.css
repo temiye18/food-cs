@@ -1,0 +1,122 @@
+.empowering-section {
+  padding: clamp(2.5rem, 0.4167rem + 6.6667vw, 6.25rem) 0;
+}
+
+.empowering-section__header {
+  width: 100%;
+  max-width: 672px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.empowering-section__header h2 {
+  text-transform: uppercase;
+  font-family: "Neue Montreal";
+  font-size: clamp(1.75rem, 1.0556rem + 2.2222vw, 3rem);
+  color: var(--black);
+}
+
+.empowering-section__header p {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  font-size: clamp(1rem, 0.9306rem + 0.2222vw, 1.125rem);
+  color: var(--black-variant);
+  margin: 1.25rem 0;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.sub-feature {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.features .expert-matching,
+.features .time-cost {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .features .time-cost img {
+  margin-top: auto;
+} */
+
+.features .expert-matching,
+.features .time-cost,
+.sub-feature .industry,
+.sub-feature .focus {
+  background: #fafafa;
+  border: 1.25px solid grey;
+  border-radius: 16px;
+}
+
+.sub-feature .industry,
+.sub-feature .focus {
+  padding: clamp(1rem, 0.8611rem + 0.4444vw, 1.25rem);
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-feature .industry p:nth-child(1),
+.sub-feature .focus p:nth-child(1) {
+  font-weight: 700;
+  font-size: clamp(1.25rem, 1.1111rem + 0.4444vw, 1.5rem);
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  color: var(--black);
+}
+
+.sub-feature .industry > div p:nth-child(2),
+.sub-feature .focus > div p:nth-child(2) {
+  font-size: clamp(0.875rem, 0.8056rem + 0.2222vw, 1rem);
+  line-height: 157%;
+  letter-spacing: -0.01em;
+  color: var(--grey-2);
+}
+
+.features .description-box {
+  padding: clamp(1rem, 0.8611rem + 0.4444vw, 1.25rem);
+}
+
+.features .description-box p:nth-child(1) {
+  font-size: clamp(1.25rem, 1.1806rem + 0.2222vw, 1.375rem);
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  color: var(--black);
+}
+
+.features .description-box p:nth-child(2) {
+  font-size: clamp(0.875rem, 0.8056rem + 0.2222vw, 1rem);
+  line-height: 157%;
+  letter-spacing: -0.01em;
+  color: var(--grey-2);
+}
+
+@media (max-width: 673px) {
+  .features .expert-matching,
+  .features .time-cost,
+  .sub-feature .industry,
+  .sub-feature .focus {
+    height: 80dvh;
+    min-height: 400px;
+    max-height: 400px;
+  }
+  .sub-feature .industry {
+    flex-direction: column-reverse;
+  }
+
+  .sub-feature .industry > div {
+    flex: 1;
+  }
+
+  .sub-feature .focus img {
+    display: none;
+  }
+}

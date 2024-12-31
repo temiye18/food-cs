@@ -1,0 +1,16 @@
+.banner {
+  background-image: url("/images/banner_desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 810px;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    background-image: url("/images/banner_mobile.png");
+    height: 90dvh;
+    min-height: 600px;
+    max-height: 810px;
+  }
+}

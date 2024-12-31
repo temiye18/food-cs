@@ -1,0 +1,30 @@
+.innovation-section {
+  padding: clamp(2.5rem, -0.3125rem + 9vw, 7.5625rem) 0;
+  background-color: var(--green-50);
+}
+.innovation-section__content {
+  display: flex;
+  gap: clamp(2rem, -1.3681rem + 10.7778vw, 8.0625rem);
+}
+.innovation-section__content h1 {
+  text-transform: uppercase;
+  font-family: "Neue Montreal";
+  font-size: clamp(3.5rem, 1.2778rem + 7.1111vw, 7.5rem);
+  line-height: 120%;
+  color: var(--btn-text);
+  flex: 1;
+}
+
+.innovation-section__content p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 200%;
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+
+@media (max-width: 768px) {
+  .innovation-section__content {
+    flex-direction: column;
+  }
+}
