@@ -12,10 +12,11 @@ import {
   FooterNav,
   JoinWaitList,
 } from "@/components";
-import { JoinModal } from "@/ui";
+import { ConfettiModal, JoinModal } from "@/ui";
 
 export default function Home() {
   const [showJoinModal, setShowJoinModal] = useState(false);
+  const [showConfettiModal, setShowConfettiModal] = useState(false);
 
   function handleOpenModal() {
     setShowJoinModal(true);
@@ -23,6 +24,13 @@ export default function Home() {
 
   function handleCloseModal() {
     setShowJoinModal(false);
+  }
+  function handleOpenConfettiModal() {
+    setShowConfettiModal(true);
+  }
+
+  function handleCloseConfettiModal() {
+    setShowConfettiModal(false);
   }
   return (
     <>
@@ -36,7 +44,15 @@ export default function Home() {
       <Faq />
       <FooterNav />
       <JoinWaitList handleOpenModal={handleOpenModal} />
-      {showJoinModal && <JoinModal handleCloseModal={handleCloseModal} />}
+      {showJoinModal && (
+        <JoinModal
+          handleCloseModal={handleCloseModal}
+          handleOpenConfettiModal={handleOpenConfettiModal}
+        />
+      )}
+      {showConfettiModal && (
+        <ConfettiModal handleCloseConfettiModal={handleCloseConfettiModal} />
+      )}
     </>
   );
 }

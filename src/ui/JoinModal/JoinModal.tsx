@@ -1,15 +1,36 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Image from "next/image";
 import { User, Email, Briefcase, ChevronDown, Close } from "@/assets/svgs";
 import { FaCheck } from "react-icons/fa";
 import classes from "./JoinModal.module.css";
 import Button from "../Button/Button";
-
-const JoinModal: React.FC<{ handleCloseModal: () => void }> = ({
+interface JoinModalProps {
+  handleCloseModal: () => void;
+  handleOpenConfettiModal: () => void;
+}
+const JoinModal: React.FC<JoinModalProps> = ({
   handleCloseModal,
+  handleOpenConfettiModal,
 }) => {
   const [userAgreed, setUserAgreed] = useState<boolean>(false);
+
+  const [category, setCategory] = useState<string>("");
+
+  const parentRef = useRef<HTMLDivElement>(null); // Correct useRef initialization
+
+  const handleClick = (category: string) => {
+    setCategory(category);
+    if (parentRef.current) {
+      parentRef.current.blur(); // Ensure the parent loses focus
+    }
+  };
+
+  const handleSubmit = () => {
+    handleCloseModal();
+    handleOpenConfettiModal();
+  };
+
   return (
     <>
       <div className={classes.backdrop} onClick={handleCloseModal}></div>
@@ -63,10 +84,21 @@ const JoinModal: React.FC<{ handleCloseModal: () => void }> = ({
 
             <div className={`${classes.category} ${classes.input}`}>
               <label htmlFor="category">Category</label>
-              <div>
-                <p className={classes["default-text"]}>
-                  Are you an expert or a business?
-                </p>
+              <div tabIndex={-1} ref={parentRef}>
+                {!category && (
+                  <p className={classes["label-text"]}>
+                    Are you an expert or a business?
+                  </p>
+                )}
+
+                {category && (
+                  <p className={classes["active-text"]}>
+                    {category === "expert"
+                      ? "I am a Food Development Expert"
+                      : " I am a business in search of an expert"}
+                  </p>
+                )}
+
                 <Image
                   src={Briefcase}
                   width={20}
@@ -82,6 +114,22 @@ const JoinModal: React.FC<{ handleCloseModal: () => void }> = ({
                   priority
                   className={classes["chevron-down"]}
                 />
+                <div className={classes["category-options"]}>
+                  <p
+                    onClick={() => handleClick("expert")}
+                    className={`${category === "expert" ? classes.active : ""}`}
+                  >
+                    I am a Food Development Expert
+                  </p>
+                  <p
+                    onClick={() => handleClick("business")}
+                    className={`${
+                      category === "business" ? classes.active : ""
+                    }`}
+                  >
+                    I am a business in search of an expert
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -101,7 +149,10 @@ const JoinModal: React.FC<{ handleCloseModal: () => void }> = ({
           </div>
 
           <div className={classes["form-action"]}>
-            <Button className={classes["form-action__btn"]}>
+            <Button
+              className={classes["form-action__btn"]}
+              onClick={handleSubmit}
+            >
               Join waitlist
             </Button>
             <p>We won’t spam you</p>

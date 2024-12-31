@@ -103,7 +103,7 @@
 
 .form input::placeholder,
 .form input,
-.category p.default-text {
+.category p.label-text {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
@@ -111,7 +111,8 @@
   font-family: "DM Sans";
 }
 
-.form input {
+.form input,
+.category p.active-text {
   color: var(--black);
 }
 
@@ -145,13 +146,51 @@
   right: 16px;
 }
 
-.category div {
+.category > div {
   outline: none;
   background: #fafafa;
-  /* border: 1.25px solid var(--green-80); */
   border-radius: 8px;
   padding: 0.5625rem 1.0625rem 0.5625rem 2.75rem;
   width: 100%;
+  position: relative;
+}
+
+.category > div .category-options {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  overflow-y: auto;
+  z-index: 10;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.category > div:focus-within {
+  border: 1.25px solid var(--green-80);
+}
+
+.category > div:focus-within .category-options {
+  display: block;
+}
+
+.category > div .category-options p {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--black);
+  padding: 0.4375rem 0.875rem;
+  cursor: pointer;
+}
+
+.category > div .category-options p:hover {
+  background-color: lightgrey;
+}
+.category > div .category-options p.active {
+  background-color: lightgrey;
 }
 
 .form .agreement {
