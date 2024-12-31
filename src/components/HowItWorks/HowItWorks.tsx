@@ -5,7 +5,7 @@ import classes from "./HowItWorks.module.css";
 
 const HowItWorks = () => {
   return (
-    <section className={classes["how-section"]}>
+    <section className={classes["how-section"]} id="how-it-works">
       <Container>
         <div className={classes["how-section__header"]}>
           <h2>How it works</h2>

@@ -11,7 +11,7 @@ const Faq = () => {
     setClickId((prev) => (prev === id ? null : id));
   };
   return (
-    <section className={classes["faq-section"]}>
+    <section className={classes["faq-section"]} id="faqs">
       <Container>
         <div className={classes["faq-section__container"]}>
           <div className={classes["faq-section__title"]}>

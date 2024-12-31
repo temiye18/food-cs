@@ -17,12 +17,10 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
 }) => {
   const answerRef = useRef<HTMLDivElement>(null);
   return (
-    <div className={classes.card}>
+    <div className={classes.card} onClick={onToggle}>
       <div className={classes.question}>
         <p>{faq.question}</p>
-        <button onClick={onToggle}>
-          {isActive ? <LuMinus /> : <IoAddOutline />}
-        </button>
+        <button>{isActive ? <LuMinus /> : <IoAddOutline />}</button>
       </div>
 
       <div

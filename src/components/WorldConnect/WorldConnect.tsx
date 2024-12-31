@@ -3,7 +3,9 @@ import Image from "next/image";
 import classes from "./WorldConnect.module.css";
 import { FoodCategory, FoodCategoryMobile } from "@/assets/svgs";
 
-const WorldConnect = () => {
+const WorldConnect: React.FC<{ handleOpenModal: () => void }> = ({
+  handleOpenModal,
+}) => {
   return (
     <section className={classes["world-connect-section"]}>
       <Container>
@@ -15,7 +17,7 @@ const WorldConnect = () => {
             supplements, gourmet products, or sustainable foods. Collaborate and
             innovate, no matter where you are.
           </p>
-          <Button>Join waitlist</Button>
+          <Button onClick={handleOpenModal}>Join waitlist</Button>
         </div>
 
         <div className={classes["food-category"]}>
@@ -50,7 +52,9 @@ const WorldConnect = () => {
               </p>
             </div>
 
-            <Button className={classes["join-btn"]}>Join waitlist</Button>
+            <Button onClick={handleOpenModal} className={classes["join-btn"]}>
+              Join waitlist
+            </Button>
           </div>
 
           <Image

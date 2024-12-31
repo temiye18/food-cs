@@ -1,0 +1,217 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(18, 18, 18, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+@keyframes zoom-in {
+  from {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-container {
+  padding: clamp(1.25rem, 1.1111rem + 0.4444vw, 1.5rem)
+    clamp(0.75rem, 0.3333rem + 1.3333vw, 1.5rem);
+  background-color: #fff;
+  width: 80%; /* Adjust width as needed */
+  max-width: 540px;
+  height: auto; /* Allow height to adjust based on content */
+  max-height: 90vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 10;
+  border-radius: 1rem;
+  animation: zoom-in 0.3s ease forwards;
+}
+
+.modal-container .logo {
+  padding: 0 2rem;
+  position: relative;
+}
+
+.modal-container .logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(178.48deg, #0b7818 -38.72%, #bfff73 75.83%);
+  opacity: 0.33;
+  filter: blur(60px);
+}
+
+.modal-container .logo p {
+  font-family: "Gluten";
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 133%;
+  color: var(--black);
+  text-align: center;
+}
+.modal-container .logo p > span {
+  color: var(--primary-color);
+}
+
+.modal-container .form p.title {
+  font-weight: 700;
+  font-size: clamp(1.75rem, 1.6111rem + 0.4444vw, 2rem);
+  line-height: 91%;
+  letter-spacing: -2px;
+  color: var(--black);
+  text-align: center;
+  margin-top: clamp(1.5rem, 1.2222rem + 0.8889vw, 2rem);
+}
+
+.form input {
+  border: none;
+  outline: none;
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 0.5625rem 1.0625rem 0.5625rem 2.75rem;
+  width: 100%;
+}
+
+.form input:focus {
+  border: 1.25px solid var(--green-80);
+}
+
+.form input::placeholder,
+.form input,
+.category p.default-text {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #727272;
+  font-family: "DM Sans";
+}
+
+.form input {
+  color: var(--black);
+}
+
+.input-box {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: clamp(1.25rem, 1.1111rem + 0.4444vw, 1.5rem);
+}
+.input-box .input label {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--grey-2);
+}
+
+.input-box .input > div {
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+.input-box .input > div img {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-box .input > div img.chevron-down {
+  left: unset;
+  right: 16px;
+}
+
+.category div {
+  outline: none;
+  background: #fafafa;
+  /* border: 1.25px solid var(--green-80); */
+  border-radius: 8px;
+  padding: 0.5625rem 1.0625rem 0.5625rem 2.75rem;
+  width: 100%;
+}
+
+.form .agreement {
+  margin-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.form .agreement button {
+  all: unset;
+  position: relative;
+  border: 1px solid #b5bece;
+  width: 25px;
+  height: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form .agreement button.active {
+  background: var(--green-80);
+}
+
+.form .agreement button svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+}
+
+.form .agreement p {
+  font-weight: 400;
+  font-size: clamp(0.875rem, 0.8056rem + 0.2222vw, 1rem);
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+
+.form .agreement p > span {
+  font-weight: 600;
+}
+
+.form-action {
+  text-align: center;
+  margin: 2rem auto 0;
+  width: 70%;
+  max-width: 280px;
+}
+
+.form-action__btn {
+  width: 100%;
+  padding: 0.9375rem 0;
+}
+
+.form-action p {
+  font-size: 0.875rem;
+  line-height: 171%;
+  letter-spacing: -0.01em;
+  color: var(--grey-2);
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 1439px) {
+  .modal-container {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .modal-container {
+    width: 96%;
+  }
+}

@@ -5,7 +5,7 @@ import classes from "./Empowering.module.css";
 
 const Empowering = () => {
   return (
-    <section className={classes["empowering-section"]}>
+    <section className={classes["empowering-section"]} id="features">
       <Container>
         <div className={classes["empowering-section__header"]}>
           <h2>Empowering Meaning Connections</h2>

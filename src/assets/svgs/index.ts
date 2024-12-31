@@ -14,3 +14,8 @@ export { default as Google } from "./Google.svg";
 export { default as Twitter } from "./Twitter.svg";
 export { default as Instagram } from "./Instagram.svg";
 export { default as LinkedIn } from "./LinkedIn.svg";
+export { default as User } from "./User.svg";
+export { default as Email } from "./Email.svg";
+export { default as Briefcase } from "./Briefcase.svg";
+export { default as ChevronDown } from "./ChevronDown.svg";
+export { default as Check } from "./Check.svg";

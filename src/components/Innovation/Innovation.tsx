@@ -3,7 +3,7 @@ import classes from "./Innovation.module.css";
 
 const Innovation = () => {
   return (
-    <section className={classes["innovation-section"]}>
+    <section className={classes["innovation-section"]} id="about">
       <Container>
         <div className={classes["innovation-section__content"]}>
           <h1>Where Innovation Meets Community</h1>

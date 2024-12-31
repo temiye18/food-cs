@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const WhyItMatters = () => {
   return (
-    <section className={classes["why-section"]} id="why">
+    <section className={classes["why-section"]}>
       <Container>
         <h2>Why it matters?</h2>
         <p className={classes["why-paragraph"]}>

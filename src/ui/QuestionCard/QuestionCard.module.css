@@ -2,6 +2,7 @@
   background-color: var(--green-60);
   padding: 1rem clamp(0.75rem, 0.4722rem + 0.8889vw, 1.25rem);
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .card .question {

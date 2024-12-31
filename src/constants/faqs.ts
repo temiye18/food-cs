@@ -3,56 +3,55 @@ import { type Faq } from "@/interfaces/i-faq";
 export const faqs: Faq[] = [
   {
     id: "q1",
-    question: "What is FoodCs?",
+    question: "What is FoodCS?",
     answer:
-      "FoodCs is a platform that connects food lovers with local chefs, allowing them to share recipes, connect with others, and earn points for their participation.",
+      "FoodCS is a platform where food product development experts and businesses collaborate to create groundbreaking solutions. It bridges the gap between creativity and industry needs, driving innovation while fostering meaningful professional connections.",
   },
   {
     id: "q2",
-    question: "How do I earn points?",
+    question: "How does the waitlist work?",
     answer:
-      "To earn points, you must share your recipes with FoodCs, like your favorite dishes on social media. You can also win points by following your favorite chefs and joining their cooking clubs.",
+      "Joining the FoodCS waitlist gives you early access to connect with industry experts and participate in collaborative food product development projects. You'll receive updates about the platform's launch and exclusive opportunities.",
   },
   {
     id: "q3",
-    question: "How do I share my recipes?",
+    question: "When will FoodCS launch?",
     answer:
-      "To share your recipes with FoodCs, first create an account or log in using your email and password. Then, go to the 'My Recipes' section and click on 'Add Recipe'. Fill out the required fields and upload your photo. After that, share your recipe on your favorite social media platforms and mention FoodCs in your comments.",
+      "FoodCS is set to launch soon, with exact dates to be announced. Joining the waitlist ensures you're among the first to know and get involved.",
   },
   {
     id: "q4",
-    question: "Can I share recipes with my friends?",
+    question: "Who can join the waitlist?",
     answer:
-      "Yes, you can share your recipes with your friends on FoodCs. Simply go to the 'My Recipes' section and click on 'Share Recipe'. Choose your friends and send them the link to your recipe. They will be able to view and like your recipe, and you will earn points for their participation.",
+      "Both individuals and businesses with an interest in food product development and innovation are welcome to join the FoodCS waitlist.",
   },
   {
     id: "q5",
-    question: "What are the benefits of participating in FoodCs?",
-    answer:
-      "Participating in FoodCs can offer you the following benefits: 1. Sharing recipes with like-minded individuals. 2. Connecting with new people who share your interest in food and cooking. 3. Earning points for your participation and winning prizes.",
+    question: "Is it free to join the waitlist?",
+    answer: "Yes, joining the FoodCS waitlist is completely free.",
   },
   {
     id: "q6",
-    question: "How do I win points?",
+    question: "What benefits do waitlist members get?",
     answer:
-      "To win points, you must share your recipes with FoodCs, like your favorite dishes on social media. You can also win points by following your favorite chefs and joining their cooking clubs.",
+      "Waitlist members gain early access to the platform, updates on its development, and opportunities to engage with a community of food product development experts and businesses.",
   },
   {
     id: "q7",
-    question: "Can I lose points if I don't share my recipes?",
+    question: "What kind of projects can I expect on FoodCS?",
     answer:
-      "Yes, you can lose points if you don't share your recipes with FoodCs. However, you won't lose your account or your points. To avoid losing points, make sure to share your recipes regularly and consistently.",
+      "On FoodCS, you can expect projects focused on innovative food product development, addressing industry challenges, and creating market-ready solutions.",
   },
   {
     id: "q8",
-    question: "What is a cooking club?",
+    question: "Can businesses and individuals join the waitlist?",
     answer:
-      "A cooking club is a group of people who share the same interest in food and cooking. To join a cooking club, go to the 'Cooking Clubs' section and click on 'Join a Cooking Club'. Choose a club and follow the instructions to join the club.",
+      "Yes, both businesses and individuals passionate about food innovation can join the FoodCS waitlist to explore collaboration opportunities.",
   },
   {
     id: "q9",
-    question: "How do I follow a chef?",
+    question: "Can I share the waitlist with others?",
     answer:
-      "To follow a chef, go to the 'Chefs' section and click on 'Follow Chef'. Choose a chef and follow them to see their latest recipes and updates.",
+      "Absolutely! Sharing the FoodCS waitlist with others helps grow the community and brings in more opportunities for collaboration.",
   },
 ];

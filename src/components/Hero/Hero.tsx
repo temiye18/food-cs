@@ -2,7 +2,9 @@ import { Container, Button } from "@/ui";
 
 import classes from "./Hero.module.css";
 
-const Hero = () => {
+const Hero: React.FC<{ handleOpenModal: () => void }> = ({
+  handleOpenModal,
+}) => {
   return (
     <section className={classes["hero-section"]}>
       <Container className={classes["hero-container"]}>
@@ -13,7 +15,7 @@ const Hero = () => {
           <nav>
             <ul>
               <li>
-                <a href="#why">Why?</a>
+                <a href="#about">About</a>
               </li>
               <li>
                 <a href="#features">Features</a>
@@ -27,7 +29,9 @@ const Hero = () => {
             </ul>
           </nav>
 
-          <Button className={classes["header-btn"]}>Join waitlist</Button>
+          <Button onClick={handleOpenModal} className={classes["header-btn"]}>
+            Join waitlist
+          </Button>
         </header>
 
         <div className={classes["hero-content"]}>
@@ -42,7 +46,9 @@ const Hero = () => {
             get exclusive early access to our community.
           </p>
 
-          <Button className={classes["hero-btn"]}>Join waitlist</Button>
+          <Button onClick={handleOpenModal} className={classes["hero-btn"]}>
+            Join waitlist
+          </Button>
         </div>
       </Container>
     </section>

@@ -1,0 +1,28 @@
+.join-waitlist {
+  padding: clamp(2.5rem, 0.9722rem + 4.8889vw, 5.25rem) 0;
+  background-color: #f7f7f7;
+}
+
+.join-waitlist .content {
+  width: 100%;
+  max-width: 956px;
+  margin: 0 auto;
+}
+
+.join-waitlist .content h2 {
+  font-family: "Neue Montreal";
+  font-size: clamp(1.5rem, 0.9444rem + 1.7778vw, 2.5rem);
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.join-waitlist .content h2:nth-child(2) {
+  opacity: 0.4;
+}
+
+.join-waitlist .content .join-btn {
+  margin-top: 2rem;
+  text-align: center;
+}
