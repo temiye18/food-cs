@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { User, Email, Briefcase, ChevronDown, Check } from "@/assets/svgs";
+import { User, Email, Briefcase, ChevronDown, Close } from "@/assets/svgs";
 import { FaCheck } from "react-icons/fa";
 import classes from "./JoinModal.module.css";
 import Button from "../Button/Button";
@@ -107,6 +107,10 @@ const JoinModal: React.FC<{ handleCloseModal: () => void }> = ({
             <p>We won’t spam you</p>
           </div>
         </form>
+
+        <button onClick={handleCloseModal} className={classes["close-btn"]}>
+          <Image src={Close} alt="close icon" width={32} height={32} priority />
+        </button>
       </div>
     </>
   );

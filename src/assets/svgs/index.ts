@@ -18,4 +18,4 @@ export { default as User } from "./User.svg";
 export { default as Email } from "./Email.svg";
 export { default as Briefcase } from "./Briefcase.svg";
 export { default as ChevronDown } from "./ChevronDown.svg";
-export { default as Check } from "./Check.svg";
+export { default as Close } from "./Close.svg";

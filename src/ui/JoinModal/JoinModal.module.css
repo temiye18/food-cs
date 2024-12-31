@@ -40,6 +40,15 @@
   animation: zoom-in 0.3s ease forwards;
 }
 
+.modal-container .close-btn {
+  all: unset;
+  position: absolute;
+  top: 1.875rem;
+  right: 1.5rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
 .modal-container .logo {
   padding: 0 2rem;
   position: relative;
