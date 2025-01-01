@@ -75,22 +75,31 @@ const Empowering = () => {
                 </div>
               </div>
 
-              <div className={classes["focus"]}>
-                <Image
-                  src={Focus}
-                  alt="Calendar icon"
-                  width={202}
-                  height={151}
-                  priority
-                />
-                <div>
-                  <p>Sustainability Focus</p>
-                  <p>
-                    Support eco-friendly and socially responsible practices in
-                    food development, contributing to a sustainable future.
-                  </p>
+              <Fade
+                cascade
+                direction="left"
+                damping={0.4}
+                delay={1000}
+                duration={1000}
+                triggerOnce
+              >
+                <div className={classes["focus"]}>
+                  <Image
+                    src={Focus}
+                    alt="Calendar icon"
+                    width={202}
+                    height={151}
+                    priority
+                  />
+                  <div>
+                    <p>Sustainability Focus</p>
+                    <p>
+                      Support eco-friendly and socially responsible practices in
+                      food development, contributing to a sustainable future.
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </Fade>
             </div>
             <div className={classes["time-cost"]}>
               <div className={classes["description-box"]}>
