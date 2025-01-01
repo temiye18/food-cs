@@ -1,5 +1,5 @@
 import { Container, Button } from "@/ui";
-
+import { Fade } from "react-awesome-reveal";
 import classes from "./Hero.module.css";
 
 const Hero: React.FC<{ handleOpenModal: () => void }> = ({
@@ -35,20 +35,28 @@ const Hero: React.FC<{ handleOpenModal: () => void }> = ({
         </header>
 
         <div className={classes["hero-content"]}>
-          <p className={classes["hero-tag"]}>
-            Be the first to know when we launch
-          </p>
-          <h1>
-            Connecting experts and businesses to <span>transform food.</span>
-          </h1>
-          <p className={classes["hero-action"]}>
-            Join our waitlist. Be part of the future of culinary innovation and
-            get exclusive early access to our community.
-          </p>
+          <Fade
+            cascade
+            direction="left"
+            damping={0.4}
+            duration={800}
+            triggerOnce
+          >
+            <p className={classes["hero-tag"]}>
+              Be the first to know when we launch
+            </p>
+            <h1>
+              Connecting experts and businesses to <span>transform food.</span>
+            </h1>
+            <p className={classes["hero-action"]}>
+              Join our waitlist. Be part of the future of culinary innovation
+              and get exclusive early access to our community.
+            </p>
 
-          <Button onClick={handleOpenModal} className={classes["hero-btn"]}>
-            Join waitlist
-          </Button>
+            <Button onClick={handleOpenModal} className={classes["hero-btn"]}>
+              Join waitlist
+            </Button>
+          </Fade>
         </div>
       </Container>
     </section>

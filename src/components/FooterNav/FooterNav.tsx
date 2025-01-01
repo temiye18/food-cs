@@ -1,6 +1,6 @@
 import { Container } from "@/ui";
 import Image from "next/image";
-import { Google, LinkedIn, Twitter, Instagram } from "@/assets/svgs";
+import { Google, LinkedIn } from "@/assets/svgs";
 import classes from "./FooterNav.module.css";
 
 const FooterNav = () => {
@@ -24,28 +24,7 @@ const FooterNav = () => {
                   />
                 </a>
               </li>
-              <li>
-                <a href="https://x.com/home" target="blank_">
-                  <Image
-                    src={Twitter}
-                    alt="twitter logo"
-                    width={40}
-                    height={40}
-                    priority
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/" target="blank_">
-                  <Image
-                    src={Instagram}
-                    alt="instagram logo"
-                    width={40}
-                    height={40}
-                    priority
-                  />
-                </a>
-              </li>
+
               <li>
                 <a href="https://www.linkedin.com" target="blank_">
                   <Image

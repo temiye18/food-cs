@@ -41,6 +41,7 @@
 .features .time-cost {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .features .time-cost {

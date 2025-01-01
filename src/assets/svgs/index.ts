@@ -10,8 +10,6 @@ export { default as CurveOne } from "./CurveOne.svg";
 export { default as CurveTwo } from "./CurveTwo.svg";
 export { default as Focus } from "./Focus.svg";
 export { default as Google } from "./Google.svg";
-export { default as Twitter } from "./Twitter.svg";
-export { default as Instagram } from "./Instagram.svg";
 export { default as LinkedIn } from "./LinkedIn.svg";
 export { default as User } from "./User.svg";
 export { default as Email } from "./Email.svg";

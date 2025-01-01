@@ -18,7 +18,7 @@
   color: var(--black);
 }
 
-.join-waitlist .content h2:nth-child(2) {
+.join-waitlist .content h2.metrics {
   opacity: 0.4;
 }
 

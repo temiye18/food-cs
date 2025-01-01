@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Container, QuestionCard } from "@/ui";
 import { faqs } from "@/constants";
+import { Fade } from "react-awesome-reveal";
 import classes from "./Faq.module.css";
 
 const Faq = () => {
@@ -15,7 +16,9 @@ const Faq = () => {
       <Container>
         <div className={classes["faq-section__container"]}>
           <div className={classes["faq-section__title"]}>
-            <h2>Frequently Asked Questions</h2>
+            <Fade direction="left" duration={1000} triggerOnce>
+              <h2>Frequently Asked Questions</h2>
+            </Fade>
           </div>
           <div className={classes["faq-section__questions"]}>
             {faqs.map((faq) => {
