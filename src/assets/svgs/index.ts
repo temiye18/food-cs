@@ -2,6 +2,7 @@ export { default as FoodCategory } from "./FoodCategory.svg";
 export { default as FoodCategoryMobile } from "./FoodCategoryMobile.svg";
 export { default as Industry } from "./Industry.svg";
 export { default as Time } from "./Time.svg";
+export { default as ExpertMatching } from "./ExpertMatching.svg";
 export { default as StepOne } from "./StepOne.svg";
 export { default as StepTwo } from "./StepTwo.svg";
 export { default as StepThree } from "./StepThree.svg";

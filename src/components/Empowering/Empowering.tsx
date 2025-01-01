@@ -1,6 +1,6 @@
 import { Container } from "@/ui";
 import Image from "next/image";
-import { Industry, Time, Focus } from "@/assets/svgs";
+import { Industry, Time, Focus, ExpertMatching } from "@/assets/svgs";
 import classes from "./Empowering.module.css";
 
 const Empowering = () => {
@@ -26,14 +26,23 @@ const Empowering = () => {
                 effortless.
               </p>
             </div>
+
+            <Image
+              src={ExpertMatching}
+              alt="people"
+              width={414}
+              height={464}
+              priority
+              className={classes["tree-icon"]}
+            />
           </div>
           <div className={classes["sub-feature"]}>
             <div className={classes["industry"]}>
               <Image
                 src={Industry}
                 alt="building icon"
-                width={170}
-                height={142}
+                width={414}
+                height={154}
                 priority
               />
 
@@ -51,8 +60,8 @@ const Empowering = () => {
               <Image
                 src={Focus}
                 alt="Calendar icon"
-                width={170}
-                height={142}
+                width={202}
+                height={151}
                 priority
               />
               <div>
@@ -73,14 +82,14 @@ const Empowering = () => {
               </p>
             </div>
 
-            {/* <Image
+            <Image
               src={Time}
               alt="tree icon"
-              width={990}
-              height={782}
+              width={335}
+              height={314}
               priority
               className={classes["tree-icon"]}
-            /> */}
+            />
           </div>
         </div>
       </Container>
