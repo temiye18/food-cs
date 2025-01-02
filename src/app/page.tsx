@@ -37,8 +37,8 @@ export default function Home() {
       <MetaTags
         title="Welcome to FoodCS"
         description="FoodCS is where food product development experts and businesses collaborate to create groundbreaking solutions. Our platform bridges the gap between creativity and industry needs, driving innovation while fostering meaningful professional connections."
-        image="https://res.cloudinary.com/shareupload/image/upload/v1735843121/dg99zuxggmdaov9pzexg.png"
-        url="https://res.cloudinary.com/shareupload/image/upload/v1735843121/dg99zuxggmdaov9pzexg.png"
+        image="/images/og_image.png"
+        url="/images/og_image.png"
       />
       <Hero handleOpenModal={handleOpenModal} />
       <Innovation />
