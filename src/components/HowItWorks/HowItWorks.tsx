@@ -91,7 +91,7 @@ const HowItWorks = () => {
               <p>Get your project executed</p>
               <p>
                 Collaborate seamlessly to bring your food innovation to life
-                with trusted partners.to connect with the right experts or
+                with trusted partners to connect with the right experts or
                 businesses.
               </p>
             </div>

@@ -8,6 +8,7 @@
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(10px);
   z-index: 10;
+  pointer-events: auto;
 }
 
 @keyframes zoom-in {
@@ -38,6 +39,7 @@
   z-index: 10;
   border-radius: 1rem;
   animation: zoom-in 0.3s ease forwards;
+  pointer-events: auto;
 }
 
 .modal-content {

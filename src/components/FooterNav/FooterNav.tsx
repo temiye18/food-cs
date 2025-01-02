@@ -14,10 +14,10 @@ const FooterNav = () => {
           <nav>
             <ul>
               <li>
-                <a href="https://www.google.com/" target="blank_">
+                <a href="mailto:info@foodcs.co.uk">
                   <Image
                     src={Google}
-                    alt="google logo"
+                    alt="gmail logo"
                     width={40}
                     height={40}
                     priority
@@ -26,10 +26,13 @@ const FooterNav = () => {
               </li>
 
               <li>
-                <a href="https://www.linkedin.com" target="blank_">
+                <a
+                  href="https://www.linkedin.com/company/foodcs/"
+                  target="blank_"
+                >
                   <Image
                     src={LinkedIn}
-                    alt="google logo"
+                    alt="LinkedIn logo"
                     width={40}
                     height={40}
                     priority

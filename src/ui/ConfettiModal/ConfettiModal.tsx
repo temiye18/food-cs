@@ -1,14 +1,18 @@
 import { useWindowSize } from "react-use";
 import Confetti from "react-confetti";
 import Button from "../Button/Button";
+import { useBlockPointerEvents } from "@/hooks";
 import classes from "./ConfettiModal.module.css";
 
 interface ConfettiModalProps {
+  showConfettiModal: boolean;
   handleCloseConfettiModal: () => void;
 }
 const ConfettiModal: React.FC<ConfettiModalProps> = ({
+  showConfettiModal,
   handleCloseConfettiModal,
 }) => {
+  useBlockPointerEvents(showConfettiModal);
   const { width, height } = useWindowSize();
   return (
     <>

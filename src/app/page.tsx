@@ -44,12 +44,16 @@ export default function Home() {
       <JoinWaitList handleOpenModal={handleOpenModal} />
       {showJoinModal && (
         <JoinModal
+          showJoinModal={showJoinModal}
           handleCloseModal={handleCloseModal}
           handleOpenConfettiModal={handleOpenConfettiModal}
         />
       )}
       {showConfettiModal && (
-        <ConfettiModal handleCloseConfettiModal={handleCloseConfettiModal} />
+        <ConfettiModal
+          showConfettiModal={showConfettiModal}
+          handleCloseConfettiModal={handleCloseConfettiModal}
+        />
       )}
     </>
   );

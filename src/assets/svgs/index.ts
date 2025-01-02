@@ -16,3 +16,4 @@ export { default as Email } from "./Email.svg";
 export { default as Briefcase } from "./Briefcase.svg";
 export { default as ChevronDown } from "./ChevronDown.svg";
 export { default as Close } from "./Close.svg";
+export { default as Loading } from "./Loading.svg";

@@ -42,6 +42,11 @@ body {
   font-style: normal;
 }
 
+body.modal-open {
+    overflow: hidden; /* Disable scrolling */
+    pointer-events: none; /* Disable pointer events */
+}
+
 ul {
   list-style: none;
 }

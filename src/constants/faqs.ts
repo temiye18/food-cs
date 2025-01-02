@@ -5,7 +5,7 @@ export const faqs: Faq[] = [
     id: "q1",
     question: "What is FoodCS?",
     answer:
-      "FoodCS is a web platform that matches food businesses with food experts. With the help of AI, we provide experts at any stage of your product development journey. From Ideation workshops through to launching your product",
+      "FoodCS is a web platform that matches food businesses with food experts. With the help of AI, we provide experts at any stage of your product development journey, from Ideation workshops through to launching your product.",
   },
   {
     id: "q2",
@@ -59,6 +59,6 @@ Food Experts: FoodCS is the platform created for food experts to easily connect 
     id: "q10",
     question: "Can I share the waitlist with others?",
     answer:
-      "Absolutely! We encourage you to share the waitlist with friends, colleagues, or anyone ito begin their food development journey!",
+      "Absolutely! We encourage you to share the waitlist with friends, colleagues, or anyone interested in beginning their food development journey!",
   },
 ];

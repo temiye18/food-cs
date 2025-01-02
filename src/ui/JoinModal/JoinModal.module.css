@@ -8,6 +8,7 @@
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(10px);
   z-index: 10;
+  pointer-events: auto;
 }
 
 @keyframes zoom-in {
@@ -38,6 +39,7 @@
   z-index: 10;
   border-radius: 1rem;
   animation: zoom-in 0.3s ease forwards;
+  pointer-events: auto;
 }
 
 .modal-container .close-btn {
@@ -231,6 +233,15 @@
 
 .form .agreement p > span {
   font-weight: 600;
+}
+
+.form p.error {
+  font-weight: 500;
+  font-size: clamp(0.875rem, 0.8056rem + 0.2222vw, 1rem);
+  letter-spacing: -0.02em;
+  color: rgba(255, 0, 0, 0.89);
+  text-align: center;
+  margin-top: 1.25rem;
 }
 
 .form-action {

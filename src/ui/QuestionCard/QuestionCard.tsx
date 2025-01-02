@@ -16,6 +16,25 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
   isActive,
 }) => {
   const answerRef = useRef<HTMLDivElement>(null);
+
+  const specialQuestion = "How is FoodCS helpful to me?";
+  const specialAnswer =
+    faq.question.toLowerCase() === specialQuestion.toLowerCase() ? (
+      <>
+        <p>
+          <strong>Food Businesses:</strong> FoodCS provides the space for food
+          startups, challenger brands or established brands to easily find and
+          collaborate with experts in the food development field.
+        </p>
+        <p>
+          <strong>Food Experts:</strong> FoodCS is the platform created for food
+          experts to easily connect with a variety of food businesses on a
+          project to project basis.
+        </p>
+      </>
+    ) : (
+      <p>{faq.answer}</p>
+    );
   return (
     <div className={classes.card} onClick={onToggle}>
       <div className={classes.question}>
@@ -28,7 +47,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
         ref={answerRef}
         style={isActive ? { height: answerRef.current!.scrollHeight } : {}}
       >
-        <p>{faq.answer}</p>
+        {specialAnswer}
       </div>
     </div>
   );
