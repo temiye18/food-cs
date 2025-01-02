@@ -23,7 +23,6 @@ interface ResponseData {
 const JoinWaitList: React.FC<{ handleOpenModal: () => void }> = ({
   handleOpenModal,
 }) => {
-  const [responseData, setResponseData] = useState<ResponseData | null>(null);
   const [registeredCount, setRegisteredCount] = useState<number>(0);
 
   async function fetchRecords() {
@@ -42,7 +41,7 @@ const JoinWaitList: React.FC<{ handleOpenModal: () => void }> = ({
         throw new Error(errorMessage);
       }
       const data = (await response.json()) as ResponseData;
-      setResponseData(data);
+
       setRegisteredCount(data.records.length);
     } catch (error) {
       if (error instanceof Error) {
@@ -72,18 +71,12 @@ const JoinWaitList: React.FC<{ handleOpenModal: () => void }> = ({
               Be part of the FoodCS community from the start. Join the waitlist
               today and stay updated on our launch!
             </h2>
-            {responseData === null ? (
-              <h2 className={classes.metrics}>
-                <span>100</span> people joined Already.
-              </h2>
-            ) : (
-              <h2 className={classes.metrics}>
-                <span>
-                  <CountUp start={0} end={registeredCount} duration={1.5} />
-                </span>{" "}
-                people joined Already.
-              </h2>
-            )}
+            <h2 className={classes.metrics}>
+              <span>
+                <CountUp start={0} end={registeredCount} duration={1.5} />
+              </span>{" "}
+              {registeredCount > 1 ? "people" : "person"} joined Already.
+            </h2>
             <div className={classes["join-btn"]}>
               <Button onClick={handleOpenModal}>Join waitlist</Button>
             </div>

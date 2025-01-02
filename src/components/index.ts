@@ -7,3 +7,4 @@ export { default as Banner } from "./Banner/Banner";
 export { default as Faq } from "./Faq/Faq";
 export { default as FooterNav } from "./FooterNav/FooterNav";
 export { default as JoinWaitList } from "./JoinWaitList/JoinWaitList";
+export { default as MetaTags } from "./MetaTags/MetaTags";
