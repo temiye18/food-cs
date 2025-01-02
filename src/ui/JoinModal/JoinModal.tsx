@@ -4,8 +4,10 @@ import Image from "next/image";
 import { User, Email, Briefcase, ChevronDown, Close } from "@/assets/svgs";
 import { useBlockPointerEvents } from "@/hooks";
 import { FaCheck } from "react-icons/fa";
-import classes from "./JoinModal.module.css";
+import { baseUrl } from "@/constants";
 import Button from "../Button/Button";
+import classes from "./JoinModal.module.css";
+
 interface JoinModalProps {
   showJoinModal: boolean;
   handleCloseModal: () => void;
@@ -63,8 +65,6 @@ const JoinModal: React.FC<JoinModalProps> = ({
       return;
     }
 
-    const url = `https://api.airtable.com/v0/${process.env.NEXT_PUBLIC_BASE_ID}/${process.env.NEXT_PUBLIC_TABLE_ID}`;
-
     const data = {
       records: [
         {
@@ -81,7 +81,7 @@ const JoinModal: React.FC<JoinModalProps> = ({
     try {
       setErrorMessage("");
       setIsLoading(true);
-      const response = await fetch(url, {
+      const response = await fetch(baseUrl, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${process.env.NEXT_PUBLIC_TOKEN}`,
