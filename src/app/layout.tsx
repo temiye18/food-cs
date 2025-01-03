@@ -34,6 +34,20 @@ export const metadata: Metadata = {
       },
     ],
   },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "FoodCS | Bridging Creativity and Industry for Groundbreaking Food Innovation",
+    description:
+      "FoodCS is where food product development experts and businesses collaborate to create groundbreaking solutions. Our platform bridges the gap between creativity and industry needs, driving innovation while fostering meaningful professional connections.",
+    images: [
+      {
+        url: "https://res.cloudinary.com/shareupload/image/upload/v1735843121/dg99zuxggmdaov9pzexg.png",
+        alt: "FoodCS Platform - Bridging Creativity and Industry",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
