@@ -10,7 +10,6 @@ import {
   Faq,
   FooterNav,
   JoinWaitList,
-  MetaTags,
 } from "@/components";
 import { ConfettiModal, JoinModal } from "@/ui";
 
@@ -34,12 +33,6 @@ export default function Home() {
   }
   return (
     <>
-      <MetaTags
-        title="Welcome to FoodCS"
-        description="FoodCS is where food product development experts and businesses collaborate to create groundbreaking solutions. Our platform bridges the gap between creativity and industry needs, driving innovation while fostering meaningful professional connections."
-        image="/images/og_image.png"
-        url="/images/og_image.png"
-      />
       <Hero handleOpenModal={handleOpenModal} />
       <Innovation />
       <WorldConnect handleOpenModal={handleOpenModal} />
