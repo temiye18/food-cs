@@ -27,7 +27,7 @@ const FooterNav = () => {
 
               <li>
                 <a
-                  href="https://www.linkedin.com/company/foodcs/"
+                  href="https://www.linkedin.com/in/food-cs-164532344/"
                   target="blank_"
                 >
                   <Image
