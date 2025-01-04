@@ -90,6 +90,10 @@
   background-color: var(--white);
 }
 
+.global-connection .join-btn:focus {
+  border: 4px solid #edfdd8;
+}
+
 @media (max-width: 500px) {
   .food-category img.desktop {
     display: none;

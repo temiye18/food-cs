@@ -49,13 +49,14 @@ const Hero: React.FC<{ handleOpenModal: () => void }> = ({
               Be the first to know when we launch
             </p>
             <h1>
-              <span className={classes.ai}>ai</span> - connecting expert and
-              businesses to{" "}
-              <span className={classes.transform}>transform food</span>
+              CONNECTING FOOD BUSINESSES WITH EXPERT PRODUCT DEVELOPERS{" "}
+              <span>POWERED BY AI</span>
             </h1>
             <p className={classes["hero-action"]}>
-              Join our waitlist. Be part of the future of AI-enhanced culinary
-              innovation and get exclusive early access to our community.
+              Are you a business looking to develop new products or an expert
+              ready to collaborate? Our AI-powered platform matches the right
+              opportunities with the right talent. Join our waitlist for early
+              access to our community.
             </p>
 
             <Button onClick={handleOpenModal} className={classes["hero-btn"]}>

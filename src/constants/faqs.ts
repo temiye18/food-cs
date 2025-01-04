@@ -17,7 +17,7 @@ export const faqs: Faq[] = [
     id: "q3",
     question: "When will FoodCS launch?",
     answer:
-      "We’re working hard to perfect the platform and aim to launch in March, 2025. Stay tuned for updates!",
+      "We’re working hard to perfect the platform and aim to launch soon. Stay tuned for updates!",
   },
   {
     id: "q4",

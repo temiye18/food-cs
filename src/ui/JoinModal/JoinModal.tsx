@@ -40,7 +40,7 @@ const JoinModal: React.FC<JoinModalProps> = ({
 
   const formIsValid =
     category && isValidEmail(formData.email) && formData.name.trim().length > 0;
-  const buttonIsDisabled = isLoading || !formIsValid;
+  const buttonIsDisabled = !formIsValid;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData((prev) => ({

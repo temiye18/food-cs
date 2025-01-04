@@ -8,7 +8,10 @@ const Innovation = () => {
       <Container>
         <div className={classes["innovation-section__content"]}>
           <Fade direction="up" duration={600} triggerOnce>
-            <h1>Where AI-Driven Innovation Meets Community</h1>
+            <h1>
+              Where <br />
+              AI-Driven Innovation Meets Community
+            </h1>
             <p>
               FoodCS combines AI-driven matching with human expertise to create
               groundbreaking solutions in food product development. Our platform

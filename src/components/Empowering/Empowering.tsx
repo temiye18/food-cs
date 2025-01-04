@@ -10,7 +10,7 @@ const Empowering = () => {
       <Container>
         <div className={classes["empowering-section__header"]}>
           <Fade direction="up" duration={600} triggerOnce>
-            <h2>Empowering Meaning Connections</h2>
+            <h2>Empowering Meaningful Connections</h2>
             <p>
               Experience a platform where artificial intelligence enhances
               global talent connections, streamlines collaboration, and
