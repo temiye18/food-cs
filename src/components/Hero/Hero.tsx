@@ -1,6 +1,9 @@
 import { Container, Button } from "@/ui";
 import { Fade } from "react-awesome-reveal";
+import { Logo } from "@/assets/svgs";
+import Link from "next/link";
 import classes from "./Hero.module.css";
+import Image from "next/image";
 
 const Hero: React.FC<{ handleOpenModal: () => void }> = ({
   handleOpenModal,
@@ -9,9 +12,15 @@ const Hero: React.FC<{ handleOpenModal: () => void }> = ({
     <section className={classes["hero-section"]}>
       <Container className={classes["hero-container"]}>
         <header className={classes["hero-header"]}>
-          <h1>
-            Food<span>CS</span>
-          </h1>
+          <Link href="/">
+            <Image
+              src={Logo}
+              alt="foodcs logo"
+              width={124.6}
+              height={44}
+              priority
+            />
+          </Link>
           <nav>
             <ul>
               <li>
@@ -35,22 +44,18 @@ const Hero: React.FC<{ handleOpenModal: () => void }> = ({
         </header>
 
         <div className={classes["hero-content"]}>
-          <Fade
-            cascade
-            direction="left"
-            damping={0.4}
-            duration={800}
-            triggerOnce
-          >
+          <Fade direction="up" duration={600} triggerOnce>
             <p className={classes["hero-tag"]}>
               Be the first to know when we launch
             </p>
             <h1>
-              Connecting experts and businesses to <span>transform food.</span>
+              <span className={classes.ai}>ai</span> - connecting expert and
+              businesses to{" "}
+              <span className={classes.transform}>transform food</span>
             </h1>
             <p className={classes["hero-action"]}>
-              Join our waitlist. Be part of the future of culinary innovation
-              and get exclusive early access to our community.
+              Join our waitlist. Be part of the future of AI-enhanced culinary
+              innovation and get exclusive early access to our community.
             </p>
 
             <Button onClick={handleOpenModal} className={classes["hero-btn"]}>

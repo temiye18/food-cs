@@ -1,6 +1,7 @@
 import { Container } from "@/ui";
 import Image from "next/image";
-import { Google, LinkedIn } from "@/assets/svgs";
+import { Google, LinkedIn, LogoDark } from "@/assets/svgs";
+import Link from "next/link";
 import classes from "./FooterNav.module.css";
 
 const FooterNav = () => {
@@ -8,9 +9,15 @@ const FooterNav = () => {
     <section className={classes["footer-nav"]}>
       <Container>
         <header className={classes["footer-header"]}>
-          <h1>
-            Food<span>CS</span>
-          </h1>
+          <Link href="/">
+            <Image
+              src={LogoDark}
+              alt="foodcs logo"
+              width={124.6}
+              height={44}
+              priority
+            />
+          </Link>
           <nav>
             <ul>
               <li>

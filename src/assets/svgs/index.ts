@@ -17,3 +17,5 @@ export { default as Briefcase } from "./Briefcase.svg";
 export { default as ChevronDown } from "./ChevronDown.svg";
 export { default as Close } from "./Close.svg";
 export { default as Loading } from "./Loading.svg";
+export { default as Logo } from "./Logo.svg";
+export { default as LogoDark } from "./LogoDark.svg";

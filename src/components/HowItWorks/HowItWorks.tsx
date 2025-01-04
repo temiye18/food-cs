@@ -9,18 +9,11 @@ const HowItWorks = () => {
     <section className={classes["how-section"]} id="how-it-works">
       <Container>
         <div className={classes["how-section__header"]}>
-          <Fade
-            cascade
-            direction="up"
-            damping={0.4}
-            delay={500}
-            duration={1000}
-            triggerOnce
-          >
+          <Fade direction="up" duration={600} triggerOnce>
             <h2>How it works</h2>
             <p>
-              FoodCS simplifies collaboration by seamlessly connecting food
-              product experts with businesses. From joining the platform to
+              FoodCS uses AI to simplify collaboration by seamlessly connecting
+              food product experts with businesses. From joining the platform to
               finding the perfect match for your project, we make the process
               intuitive and efficient.
             </p>
@@ -49,7 +42,7 @@ const HowItWorks = () => {
             direction="up"
             damping={0.4}
             delay={500}
-            duration={1000}
+            duration={700}
             triggerOnce
           >
             <div className={classes["steps-container__item"]}>
@@ -76,8 +69,8 @@ const HowItWorks = () => {
               />
               <p>Find your match</p>
               <p>
-                Leverage our smart matching tools to connect with the right
-                experts or businesses.
+                Our AI-powered matching system connects you with the right
+                experts or businesses based on your specific needs.
               </p>
             </div>
             <div className={classes["steps-container__item"]}>
@@ -91,8 +84,7 @@ const HowItWorks = () => {
               <p>Get your project executed</p>
               <p>
                 Collaborate seamlessly to bring your food innovation to life
-                with trusted partners to connect with the right experts or
-                businesses.
+                with trusted partners.
               </p>
             </div>
           </Slide>

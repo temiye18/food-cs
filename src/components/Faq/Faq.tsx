@@ -16,7 +16,7 @@ const Faq = () => {
       <Container>
         <div className={classes["faq-section__container"]}>
           <div className={classes["faq-section__title"]}>
-            <Fade direction="left" duration={1000} triggerOnce>
+            <Fade direction="up" duration={600} triggerOnce>
               <h2>Frequently Asked Questions</h2>
             </Fade>
           </div>

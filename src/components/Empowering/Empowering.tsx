@@ -9,39 +9,26 @@ const Empowering = () => {
     <section className={classes["empowering-section"]} id="features">
       <Container>
         <div className={classes["empowering-section__header"]}>
-          <Fade
-            cascade
-            direction="down"
-            damping={0.6}
-            delay={500}
-            duration={1000}
-            triggerOnce
-          >
+          <Fade direction="up" duration={600} triggerOnce>
             <h2>Empowering Meaning Connections</h2>
             <p>
-              Discover the benefits of joining a platform that connects global
-              talent, streamlines collaboration, and drives innovation in food
-              product development.
+              Experience a platform where artificial intelligence enhances
+              global talent connections, streamlines collaboration, and
+              accelerates innovation in food product development.
             </p>
           </Fade>
         </div>
 
         <div className={classes["features"]}>
-          <Fade
-            cascade
-            direction="left"
-            damping={0.4}
-            delay={1000}
-            duration={1000}
-            triggerOnce
-          >
+          <Fade direction="up" duration={600} triggerOnce>
             <div className={classes["expert-matching"]}>
               <div className={classes["description-box"]}>
-                <p>Expert Matching</p>
+                <p>AI-Powered Expert Matching</p>
                 <p>
-                  Advanced tools ensure businesses find the right experts and
-                  experts discover the best projects, making partnerships
-                  effortless.
+                  Our sophisticated algorithms analyse expertise, experience,
+                  and project requirements to ensure businesses find their ideal
+                  experts and experts discover their perfect projects, making
+                  partnerships truly effortless.
                 </p>
               </div>
 
@@ -75,14 +62,7 @@ const Empowering = () => {
                 </div>
               </div>
 
-              <Fade
-                cascade
-                direction="left"
-                damping={0.4}
-                delay={1000}
-                duration={1000}
-                triggerOnce
-              >
+              <Fade direction="up" duration={600} triggerOnce>
                 <div className={classes["focus"]}>
                   <Image
                     src={Focus}
@@ -105,8 +85,8 @@ const Empowering = () => {
               <div className={classes["description-box"]}>
                 <p>Time and Cost Efficiency</p>
                 <p>
-                  Save time and resources by connecting directly with the right
-                  people and tools, ensuring faster project outcomes.
+                  Save time and resources with AI-optimised matching and
+                  collaboration tools, ensuring faster project outcomes.
                 </p>
               </div>
 

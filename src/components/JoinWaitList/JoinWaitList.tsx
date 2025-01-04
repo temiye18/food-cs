@@ -60,13 +60,7 @@ const JoinWaitList: React.FC<{ handleOpenModal: () => void }> = ({
     <section className={classes["join-waitlist"]}>
       <Container>
         <div className={classes.content}>
-          <Fade
-            cascade
-            direction="up"
-            damping={0.6}
-            duration={1000}
-            triggerOnce
-          >
+          <Fade direction="up" duration={600} triggerOnce>
             <h2>
               Be part of the FoodCS community from the start. Join the waitlist
               today and stay updated on our launch!

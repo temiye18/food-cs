@@ -40,8 +40,8 @@ export default function Home() {
       <HowItWorks />
       <Banner />
       <Faq />
-      <FooterNav />
       <JoinWaitList handleOpenModal={handleOpenModal} />
+      <FooterNav />
       {showJoinModal && (
         <JoinModal
           showJoinModal={showJoinModal}

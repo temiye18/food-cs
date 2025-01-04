@@ -25,17 +25,6 @@
   color: var(--white);
 }
 
-.hero-section .hero-header h1 {
-  font-family: "Gluten", serif;
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 133%;
-  color: var(--white);
-}
-.hero-section .hero-header h1 > span {
-  color: var(--primary-color);
-}
-
 .hero-section .hero-content {
   width: 100%;
   max-width: 528px;
@@ -68,8 +57,11 @@
   text-transform: uppercase;
 }
 
-.hero-section .hero-content h1 > span {
+.hero-section .hero-content h1 > span.ai {
   color: var(--primary-color-light);
+}
+.hero-section .hero-content h1 > span.transform {
+  color: var(--green-500);
 }
 
 .hero-section .hero-content p.hero-action {

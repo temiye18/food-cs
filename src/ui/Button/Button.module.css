@@ -1,5 +1,5 @@
 .btn {
-  background: #bfff73;
+  background: var(--green-500);
   border-radius: 320px;
   border: none;
   outline: none;
