@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100dvh;
+  height: fit-content;
 }
 
 .hero-section .hero-header {
@@ -29,7 +29,7 @@
   width: 100%;
   max-width: 528px;
   padding: clamp(1.75rem, -1.1319rem + 9.2222vw, 6.9375rem) 0
-    clamp(0rem, -6.0764rem + 19.4444vw, 10.9375rem) 0;
+    clamp(7rem, 4.8125rem + 7vw, 10.9375rem) 0;
 }
 
 .hero-section .hero-content p.hero-tag {
@@ -92,8 +92,9 @@
 @media (max-width: 768px) {
   .hero-section {
     background-image: url("/images/hero_bg_mobile.png");
-    min-height: 600px;
+    min-height: 810px;
   }
+
   .hero-section .hero-header nav {
     display: none;
   }

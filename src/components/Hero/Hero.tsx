@@ -53,10 +53,8 @@ const Hero: React.FC<{ handleOpenModal: () => void }> = ({
               <span>POWERED BY AI</span>
             </h1>
             <p className={classes["hero-action"]}>
-              Are you a business looking to develop new products or an expert
-              ready to collaborate? Our AI-powered platform matches the right
-              opportunities with the right talent. Join our waitlist for early
-              access to our community.
+              Our AI-powered platform matches the right opportunities with the
+              right talent. Join our waitlist for early access to our community.
             </p>
 
             <Button onClick={handleOpenModal} className={classes["hero-btn"]}>
