@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Script from "next/script";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -58,18 +59,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
+        <Script
+          id="hotjar-script"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
-            __html: `(function(h,o,t,j,a,r){
+            __html: `
+              (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
         h._hjSettings={hjid:5258121,hjsv:6};
         a=o.getElementsByTagName('head')[0];
         r=o.createElement('script');r.async=1;
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=')`,
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=')
+            `,
           }}
-        ></script>
+        />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
