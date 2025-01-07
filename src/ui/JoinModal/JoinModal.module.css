@@ -54,6 +54,7 @@
 .modal-container .logo {
   padding: 0 2rem;
   position: relative;
+  text-align: center;
 }
 
 .modal-container .logo::before {
@@ -66,18 +67,6 @@
   background: linear-gradient(178.48deg, #0b7818 -38.72%, #bfff73 75.83%);
   opacity: 0.33;
   filter: blur(60px);
-}
-
-.modal-container .logo p {
-  font-family: "Gluten";
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 133%;
-  color: var(--black);
-  text-align: center;
-}
-.modal-container .logo p > span {
-  color: var(--primary-color);
 }
 
 .modal-container .form p.title {

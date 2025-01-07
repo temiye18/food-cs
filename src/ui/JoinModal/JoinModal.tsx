@@ -1,7 +1,14 @@
 "use client";
 import { useState, useRef, FormEvent } from "react";
 import Image from "next/image";
-import { User, Email, Briefcase, ChevronDown, Close } from "@/assets/svgs";
+import {
+  User,
+  Email,
+  Briefcase,
+  ChevronDown,
+  Close,
+  LogoDark,
+} from "@/assets/svgs";
 import { useBlockPointerEvents } from "@/hooks";
 import { FaCheck } from "react-icons/fa";
 import { baseUrl } from "@/constants";
@@ -120,9 +127,16 @@ const JoinModal: React.FC<JoinModalProps> = ({
       <div className={classes.backdrop} onClick={handleCloseModal}></div>
       <div className={classes["modal-container"]}>
         <div className={classes.logo}>
-          <p>
+          {/* <p>
             Food<span>CS</span>
-          </p>
+          </p> */}
+          <Image
+            src={LogoDark}
+            alt="foodcs logo"
+            width={124.6}
+            height={44}
+            priority
+          />
         </div>
 
         <form className={classes.form} onSubmit={handleSubmit}>
