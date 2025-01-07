@@ -34,7 +34,7 @@ const FooterNav = () => {
 
               <li>
                 <a
-                  href="https://www.linkedin.com/in/food-cs-164532344/"
+                  href="https://www.linkedin.com/company/105999765"
                   target="blank_"
                 >
                   <Image
