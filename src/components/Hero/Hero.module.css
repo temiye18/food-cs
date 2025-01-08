@@ -27,7 +27,7 @@
 
 .hero-section .hero-content {
   width: 100%;
-  max-width: 528px;
+  max-width: 630px;
   padding: clamp(1.75rem, -1.1319rem + 9.2222vw, 6.9375rem) 0
     clamp(7rem, 4.8125rem + 7vw, 10.9375rem) 0;
 }
@@ -48,7 +48,7 @@
 .hero-section .hero-content h1 {
   width: 100%;
   font-family: "Neue Montreal";
-  font-size: clamp(2.25rem, 1.5556rem + 2.2222vw, 3.5rem);
+  font-size: clamp(2.25rem, 1.8333rem + 1.3333vw, 3rem);
   margin-top: 0.875rem;
   font-weight: 700;
   line-height: 120%;
