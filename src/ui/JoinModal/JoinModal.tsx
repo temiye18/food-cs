@@ -189,15 +189,17 @@ const JoinModal: React.FC<JoinModalProps> = ({
               <div tabIndex={-1} ref={parentRef}>
                 {!category && (
                   <p className={classes["label-text"]}>
-                    Are you an expert or a business?
+                    Are you an Expert, Business, or Manufacturer?
                   </p>
                 )}
 
                 {category && (
                   <p className={classes["active-text"]}>
                     {category === "expert"
-                      ? "I am a Food Development Expert"
-                      : " I am a business in search of an expert"}
+                      ? "Food Development Expert"
+                      : category === "business"
+                      ? "Business"
+                      : "Manufacturer"}
                   </p>
                 )}
 
@@ -221,7 +223,7 @@ const JoinModal: React.FC<JoinModalProps> = ({
                     onClick={() => handleClick("expert")}
                     className={`${category === "expert" ? classes.active : ""}`}
                   >
-                    I am a Food Development Expert
+                    Food Development Expert
                   </p>
                   <p
                     onClick={() => handleClick("business")}
@@ -229,7 +231,15 @@ const JoinModal: React.FC<JoinModalProps> = ({
                       category === "business" ? classes.active : ""
                     }`}
                   >
-                    I am a business in search of an expert
+                    Business
+                  </p>
+                  <p
+                    onClick={() => handleClick("manufacturer")}
+                    className={`${
+                      category === "manufacturer" ? classes.active : ""
+                    }`}
+                  >
+                    Manufacturer
                   </p>
                 </div>
               </div>
