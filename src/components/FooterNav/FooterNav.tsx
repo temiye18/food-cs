@@ -1,6 +1,6 @@
 import { Container } from "@/ui";
 import Image from "next/image";
-import { Google, LinkedIn, LogoDark } from "@/assets/svgs";
+import { Facebook, Google, LinkedIn, LogoDark } from "@/assets/svgs";
 import Link from "next/link";
 import classes from "./FooterNav.module.css";
 
@@ -40,6 +40,21 @@ const FooterNav = () => {
                   <Image
                     src={LinkedIn}
                     alt="LinkedIn logo"
+                    width={40}
+                    height={40}
+                    priority
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.facebook.com/share/14tkMGSENg/"
+                  target="blank_"
+                >
+                  <Image
+                    src={Facebook}
+                    alt="Facebook logo"
                     width={40}
                     height={40}
                     priority

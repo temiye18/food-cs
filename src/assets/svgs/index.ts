@@ -11,6 +11,7 @@ export { default as CurveTwo } from "./CurveTwo.svg";
 export { default as Focus } from "./Focus.svg";
 export { default as Google } from "./Google.svg";
 export { default as LinkedIn } from "./LinkedIn.svg";
+export { default as Facebook } from "./Facebook.svg";
 export { default as User } from "./User.svg";
 export { default as Email } from "./Email.svg";
 export { default as Briefcase } from "./Briefcase.svg";
